@@ -1,0 +1,7 @@
+<% if current_user %>
+ Signed in as <%= current_user.name %> | <%= link_to"Logout", '/logout' %>
+ Cat tax
+<img src="http://www.eonline.com/eol_images/Entire_Site/201478/rs_500x281-140808102730-cutestcat-gifs-please.gif"/>
+<% else %>
+ <%= link_to 'Login', '/login' %> | <%= link_to'Signup', '/signup' %>
+<% end %>
